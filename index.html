@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Chuck Norris Joke's Generator</title>
@@ -17,9 +17,13 @@
             <span><img src="/images/chuck2.png" alt="Chuck Norris"></span></h1>
       
         <div id="output" class="mx-auto rounded"></div>
-        <button id="btnNext" class="btn btn-lg btn-primary btn-block"  type="submit">Get Chuck Norris's Jokes</button>
-        <button id="copyToClipboard" onclick="copyContent()" class="btn btn-lg btn-success btn-block copyToClipboard" data-container="body" ata-toggle="popover" data-placement="bottom" data-content="Joke copied!">Copy to Clipboard</button>
-        <p class="mt-5 mb-3 text-muted text-center">&copy; 2022 <a href="https://fsbelisario.com.br/" target="_blank">Felipe Belisário</a></p>
+        <button id="btnNext" class="btn btn-lg btn-primary btn-block"  type="submit">Show Another Joke</button>
+        <!-- <button id="copyToClipboard" onclick="copyContent()" class="btn btn-lg btn-success btn-block copyToClipboard" data-container="body" ata-toggle="popover" data-placement="bottom" data-content="Joke copied!">Copy to Clipboard</button> -->
+        <div class="mt-5 mb-3 text-muted text-center">
+            <p>&copy; <span id="current-date"></span> Chuck Norris' Jokes Generator | <a href="https://fsbelisario.com.br/" target="_blank">Felipe Belisário </a>| CSE121b Project </p>
+               <p>Last Modification: <span id="last-modified"></span></p>
+                
+        </div>
     </div>
 </div>
     <script src="./scripts/script.js"></script>

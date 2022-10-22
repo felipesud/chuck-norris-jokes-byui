@@ -18,32 +18,31 @@ function getJokes() {
 btnNext.addEventListener('click', getJokes);
 
 
+// Showing Current Year
+const date = new Date();
+const year = date.getFullYear();
+
+
+document.getElementById("current-date").innerHTML =  year;
+
+// Last Modified
+const oLastModified = new Date(document.lastModified)
+document.getElementById("last-modified").innerHTML = oLastModified;
 
 
 
-   // COPY TO CLIPBOARD
-// const btnCopyToClipboard = document.querySelector('#copyToClipboard');
-//    function copyToClipboard() {
-    
-//     let copyText = document.querySelector("#output");
-  
-//     // Select the text field
-//     copyText.select();
-//     copyText.setSelectionRange(0, 99999); // For mobile devices
-  
-//     // Copy the text inside the text field
-//     navigator.clipboard.writeText(copyText.value);
-    
-   
-// }
 
 
-let text = document.getElementById('output').innerHTML;
-  const copyContent = async () => {
-    try {
-      await navigator.clipboard.writeText(text);
-      console.log('Content copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy: ', err);
-    }
-  }
+
+
+
+// let text = document.getElementById('output').innerHTML;
+//   const copyContent = async () => {
+//     try {
+//       await navigator.clipboard.writeText(text);
+//       console.log('Content copied to clipboard');
+//     } catch (err) {
+//       console.error('Failed to copy: ', err);
+//     }
+//   }
+
