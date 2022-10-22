@@ -5,27 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Excuse Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Chuck Norris Joke's Generator</title>
 </head>
 <body>
-   
-    <main>
-        <h1>Excuse Generator</h1>
-        <p>Choose Category</p>
-        <select name="choose category">
-    <option value="random">Random</option>
-    <option value="family">Family</option>
-    <option value="office">Office</option>
-    <option value="children">Children</option>
-    <option value="college">College</option>
-    <option value="party">Party</option>
-    <option value="funny">Funny</option>
-    <option value="unbelievable">Unbelievable</option>
-    <option value="developers">Developers</option>
-</select>
-<button type="submit">Submit</button>
-<div id="showExcuse"></div>
-    </main>
+   <div class=" d-flex justify-content-center align-items-center container">
+    <div class="box rounded ">
+        <h1 class="headings">
+            <span><img src="/images/chuck2.png" alt="Chuck Norris"></span>
+            Jokes Generator 
+            <span><img src="/images/chuck2.png" alt="Chuck Norris"></span></h1>
+      
+        <div id="output" class="mx-auto rounded"></div>
+        <button id="btnNext" class="btn btn-lg btn-primary btn-block"  type="submit">Get Chuck Norris's Jokes</button>
+        <button id="copyToClipboard" onclick="copyContent()" class="btn btn-lg btn-success btn-block copyToClipboard" data-container="body" ata-toggle="popover" data-placement="bottom" data-content="Joke copied!">Copy to Clipboard</button>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; 2022 <a href="https://fsbelisario.com.br/" target="_blank">Felipe Belisário</a></p>
+    </div>
+</div>
     <script src="./scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+     //Popover
+    $(function () {
+    $('.copyToCLipboard').popover({
+    container: 'body'
+  })
+})
+
+
+
+</script>
 </body>
 </html>
+
