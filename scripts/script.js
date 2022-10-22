@@ -15,10 +15,10 @@ const sortedJoke = document.querySelector('#output');
 
 async function getJokes() {
   const responseData = await fetch('https://api.chucknorris.io/jokes/random');
-   const JSONData = await responseData.json();
-    
-      sortedJoke.innerText = JSONData.value;
-   
+  const JSONData = await responseData.json();
+
+  sortedJoke.innerText = JSONData.value;
+
 };
 
 btnNext.addEventListener('click', getJokes);
