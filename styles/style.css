@@ -46,7 +46,10 @@ img {
   font-size: 20px;
   font-family: 'Jost', sans-serif;
 }
-
+#message {
+  background-color: #eee;
+  color: #fff;
+}
 @media (min-width: 768px) {
   .box {
     width: 550px;
