@@ -1,7 +1,3 @@
-;
-
-
-
 // GET JOKES
 
 const btnNext = document.querySelector('#btnNext');
@@ -9,10 +5,10 @@ const sortedJoke = document.querySelector('#output');
 
 function getJokes() {
   fetch('https://api.chucknorris.io/jokes/random')
-  .then(r => r.json())
-  .then(joke => {
-    sortedJoke.innerText = joke.value;
-  })
+    .then(r => r.json())
+    .then(joke => {
+      sortedJoke.innerText = joke.value;
+    })
 }
 
 btnNext.addEventListener('click', getJokes);
@@ -23,26 +19,8 @@ const date = new Date();
 const year = date.getFullYear();
 
 
-document.getElementById("current-date").innerHTML =  year;
+document.getElementById("current-date").innerHTML = year;
 
 // Last Modified
 const oLastModified = new Date(document.lastModified)
 document.getElementById("last-modified").innerHTML = oLastModified;
-
-
-
-
-
-
-
-
-// let text = document.getElementById('output').innerHTML;
-//   const copyContent = async () => {
-//     try {
-//       await navigator.clipboard.writeText(text);
-//       console.log('Content copied to clipboard');
-//     } catch (err) {
-//       console.error('Failed to copy: ', err);
-//     }
-//   }
-
